@@ -21,7 +21,7 @@ OMEGA = (
     + ["\N{SMILING CAT FACE WITH OPEN MOUTH}"]
 )
 SPECIAL_AUTHOR_CASES = {
-    57287406247743488: ["\N{JEANS}"],
+    57287406247743488: ["\N{JEANS}"],  # i think this is
     154497072148643840: ["\N{SMILING CAT FACE WITH OPEN MOUTH}"],
     418078199982063626: ["<:vexed:717081303190601779>"],
 }
@@ -56,7 +56,7 @@ if discord.version_info[:2] >= (1, 4):
             emojis = OMEGA
         emoji = random.choice(emojis)
         if content:
-            if len(content) > 1995:
+            if len(content) > 1950:
                 await real_send(self, emoji)
             else:
                 content = f"{emoji} {content} {emoji}"
